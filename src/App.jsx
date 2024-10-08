@@ -1,5 +1,14 @@
+import { format } from "date-fns";
+import DatePicker from "./DatePicker";
+import { useEffect, useState } from "react";
+
 function App() {
-  return <h1>Hello World</h1>
+  const [selectedDate, setSelectedDate] = useState();
+  return (
+    <>
+      <DatePicker value={selectedDate} onChange={setSelectedDate} />
+    </>
+  );
 }
 
-export default App
+export default App;
