@@ -1,8 +1,17 @@
-# React-Advanced
+# Advanced React Components and Hooks
 
-## Local Setup Instructions
+## Topics covered in this section of course
 
-1. To run this project locally download the files.
-2. Open the terminal and navigate to the root folder of project.
-3. Execute the command `npm install` and after that execute `npm run dev` command.
-4. Open the localhost url returned in the browser to view the project.
+1. Advanced React Concepts
+   - Portal
+   - forwardRef
+   - Error Boundaries
+   - Advanced Key uses
+   - Capture Event Listeners
+2. Advanced Hooks
+   - useLayoutEffect
+   - useDebugValues
+   - useId
+   - useImperativeHandle
+   - useCallback as REf
+   - useEffectEvent
