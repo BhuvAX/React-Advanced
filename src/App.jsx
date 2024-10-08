@@ -1,95 +1,28 @@
-import { useRef, useState } from "react";
-import { createPortal } from "react-dom";
-import { CustomInput } from "./CustomInput";
-import Child from "./Child";
-import Counter from "./Counter";
-
-// Portal example
-/* function App() {
-  const [isOpen, setIsOpen] = useState(false)
-
-  return (
-    <div style={{ position: "relative", marginTop: "100px" }}>
-      <h1>App Content</h1>
-      <button onClick={() => setIsOpen(true)}>Show Message</button>
-      <AlertMessage isOpen={isOpen} onClose={() => setIsOpen(false)}>
-        Secret Message
-        <br />
-        Click to close
-      </AlertMessage>
-    </div>
-  )
-}
-
-function AlertMessage({ children, onClose, isOpen }) {
-  if (!isOpen) return null
-
-  return createPortal(
-    <div
-      onClick={onClose}
-      style={{
-        cursor: "pointer",
-        position: "absolute",
-        top: "0.5rem",
-        left: "50%",
-        translate: "-50%",
-        background: "#777",
-        color: "white",
-        borderRadius: ".5rem",
-      }}
-    >
-      {children}
-    </div>,
-    document.querySelector("#alert-messages")
-  )
-} */
-
-//forwardRef() example
-/* function App() {
-  const inputRef = useRef()
-
-  function handleSubmit(e) {
-    e.preventDefault()
-
-    console.log(inputRef.current.value)
-  }
-
-  return (
-    <form onSubmit={handleSubmit}>
-      <CustomInput ref={inputRef} />
-      <button type="submit">Submit</button>
-    </form>
-  )
-} */
-
-// Example of implementing error boundary refer main.jsx and ErrorBoundary.jsx
-/* function App() {
-  return (
-    <>
-      <h1>Parent</h1>
-      <Child />
-    </>
-  )
-} */
+import AdvancedKeyUsesExample from "./Components/Examples/AdvancedKeyUsesExample/AdvancedKeyUsesExample";
+import ErrorBoundaryExample from "./Components/Examples/ErrorBoundaryExample/ErrorBoundaryExample";
+import ForwardRefExample from "./Components/Examples/ForwardRefExample/ForwardRefExample";
+import PortalExample from "./Components/Examples/PortalExample/PortalExample";
+import UseIdExample from "./Components/Examples/UseIdExample/UseIdExample";
+import UseImperativeHandleExample from "./Components/Examples/UseImperativeHandle/UseImperativeHandleExample";
+import UseLayoutEffectExample from "./Components/Examples/UseLayoutExample/UseLayoutEffectExample";
 
 function App() {
-  const [changeDogs, setChangeDogs] = useState(false);
-
-  return (
-    <div>
-      {changeDogs ? (
-        <>
-          <span># of Dogs: </span> <Counter key="dog" />
-        </>
-      ) : (
-        <>
-          <span># of Cats: </span> <Counter key="cat" />
-        </>
-      )}
-      <br />
-      <button onClick={() => setChangeDogs((d) => !d)}>Switch</button>
-    </div>
-  );
+  // Portal example
+  /* return <PortalExample /> */
+  //forwardRef() example
+  /* return <ForwardRefExample /> */
+  // Example of implementing error boundary refer main.jsx and ErrorBoundary.jsx
+  /* return <ErrorBoundaryExample /> */
+  // Example of advanced key uses
+  /* return <AdvancedKeyUsesExample /> */
+  // Example of useLayoutEffect hook
+  /* return <UseLayoutEffectExample /> */
+  // Example of useDebugValue hook
+  /* return <UseDebugValueExample /> */
+  // Example of useId hook
+  /* return <UseIdExample /> */
+  // Example of useImperativeHandle hook
+  return <UseImperativeHandleExample />;
 }
 
 export default App;
