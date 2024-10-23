@@ -1,8 +1,11 @@
-# React-Advanced
+# Type Safety
 
-## Local Setup Instructions
+## Topics covered in this section of course
 
-1. To run this project locally download the files.
-2. Open the terminal and navigate to the root folder of project.
-3. Execute the command `npm install` and after that execute `npm run dev` command.
-4. Open the localhost url returned in the browser to view the project.
+2.  Type Safety
+    - Typescript setup and Props
+    - Typescript useState
+    - Typescript useRef
+    - Typescript useReducer
+    - Typescript useContext
+    - Typescript Generic Component
